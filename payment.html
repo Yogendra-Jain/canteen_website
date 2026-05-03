@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .payment-box {
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            background: green;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="payment-box">
+        <h2>Payment Page</h2>
+        <div id="order-summary"></div>
+        <form id="payment-form"> <label>Name on Card</label> <input type="text" required /> <label>Card Number</label>
+            <input type="text" maxlength="16" required /> <label>Expiry Date</label> <input type="month" required />
+            <label>CVV</label> <input type="password" maxlength="3" required /> <button type="submit">Pay Now</button>
+        </form>
+    </div>
+    <script> const cart = JSON.parse(localStorage.getItem("cartData")) || []; const total = localStorage.getItem("cartTotal") || 0; const orderBox = document.getElementById("order-summary"); let html = "<h3>Order Summary</h3>"; cart.forEach(item => { html += `<p>${item.name} - ₹${item.price}</p>`; }); html += `<p><b>Total: ₹${total}</b></p>`; orderBox.innerHTML = html; document.getElementById("payment-form").addEventListener("submit", (e) => { e.preventDefault(); alert("✅ Payment Successful! Thank you for your order."); localStorage.removeItem("cartData"); localStorage.removeItem("cartTotal"); window.location.href = "index.html"; }); </script>
+</body>
+
+</html>

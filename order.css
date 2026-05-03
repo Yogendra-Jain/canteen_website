@@ -1,0 +1,16 @@
+body{
+    background-image: url("images/backgroundFood.jpg");
+}
+
+.choose {
+    font-family: sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    
+  }
+  
+  #pet-select {
+    font-size: 0.9rem;
+    padding: 2px 5px;
+  }
+  

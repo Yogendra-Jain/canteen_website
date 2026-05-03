@@ -1,0 +1,706 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("images/backgroundFood.jpg");
+}
+#preloader
+  {
+	background: #ffffff url(Animation-1724482893314.gif) no-repeat center center;
+	height: 100vh;
+	background-size: 15%;
+	width: 100%;
+	position: fixed;
+  z-index: 100;
+	
+  }
+  /* Video  */
+
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-left: 20%;
+    padding-top: 10%;
+}
+.content h1{
+    font-size: 3rem;
+    font-style:italic;
+    color: #ffd44c;
+    padding: 0%;
+    margin: 0%;
+}
+.content p{
+    font-size: 6rem;
+    font-style: italic;
+    color: #FFFFFF;
+    margin:0%;
+    padding: 0%;
+
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 1;
+}
+.innerheader{
+    display: flex;
+}
+.logo{
+    height: 100px;
+    width: 35%;
+}
+.logo img{
+    height: 100px;
+    width: 35%;
+    margin-left: 40px;
+}
+.navbtn{
+    display: flex;
+    justify-content:space-evenly;
+    width: 65%;
+    height: auto;
+    color: white;
+   
+}
+
+.home,.ourservices,.contectus,.aboutus{
+    width: 15%;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+.home a,.ourservices a,.contectus a,.aboutus a{
+    text-decoration: none;
+    color: white;
+}
+.home a:hover,.ourservices a:hover,.contectus a:hover,.aboutus a:hover{
+    color: #ffd44c;
+    font-size:20px ;
+}
+
+
+
+/* Main section */
+.nameoffood{
+    background-color:white;
+    text-align: center;
+}
+.foodinput1-5{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background:linear-gradient(180deg, rgba(255,206,103,0.22) -42.47%, rgba(253,237,202,0) 100%) ;
+}
+/* Food1 */
+#food1,#food2{
+    height: 400px;
+    width: 200px;
+}
+#f1image,#f2image{
+    height: 200px;
+    width: 200px;
+}
+#maggi,#sandwich{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#maggi:hover,#sandwich:hover{
+   border: 3px solid black;
+}
+#f1p,#f2p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f1p2,#f2p2{
+    text-align: center;
+}
+
+/* Food3 */
+#food3{
+    height: 400px;
+    width: 200px;
+}
+#f3image{
+    height: 200px;
+    width: 200px;
+}
+#Frenchfries{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Frenchfries:hover{
+   border: 3px solid black;
+}#f3p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f3p2{
+    text-align: center;
+}
+/* Food4 */
+#food4{
+    height: 400px;
+    width: 200px;
+}
+#f4image{
+    height: 200px;
+    width: 200px;
+}
+#Pavbhaji{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Pavbhaji:hover{
+   border: 3px solid black;
+}#f4p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f4p2{
+    text-align: center;
+}
+/* Food5 */
+#food5{
+    height: 400px;
+    width: 200px;
+}
+#f5image{
+    height: 200px;
+    width: 200px;
+}
+#Pizza{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Pizza:hover{
+   border: 3px solid black;
+}#f5p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f5p2{
+    text-align: center;
+}
+
+/* Food6-10 */
+.foodinput6-10{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background:linear-gradient(180deg, rgba(255,206,103,0.22) -42.47%, rgba(253,237,202,0) 100%);
+}
+/* Food6 */
+#food6{
+    height: 400px;
+    width: 200px;
+}
+#f6image{
+    height: 200px;
+    width: 200px;
+}
+#Coldcoffee{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Coldcoffee:hover{
+   border: 3px solid black;
+}#f6p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f6p2{
+    text-align: center;
+}
+/* Food7 */
+#food7{
+    height: 400px;
+    width: 200px;
+}
+#f7image{
+    height: 200px;
+    width: 200px;
+}
+#Momos{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Momos:hover{
+   border: 3px solid black;
+}
+#f7p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f7p2{
+    text-align: center;
+}
+/* Food8 */
+#food8{
+    height: 400px;
+    width: 200px;
+}
+#f8image{
+    height: 200px;
+    width: 200px;
+}
+#Pasta{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Pasta:hover{
+   border: 3px solid black;
+}
+#f8p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f8p2{
+    text-align: center;
+}
+/* Food9 */
+#food9{
+    height: 400px;
+    width: 200px;
+}
+#f9image{
+    height: 200px;
+    width: 200px;
+}
+#Burger{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Burger:hover{
+   border: 3px solid black;
+}
+#f9p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f9p2{
+    text-align: center;
+}
+/* Food10 */
+#food10{
+    height: 400px;
+    width: 200px;
+}
+#f10image{
+    height: 200px;
+    width: 200px;
+}
+#Tea{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Tea:hover{
+   border: 3px solid black;
+}
+#f10p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f10p2{
+    text-align: center;
+}
+/* Food11-15 */
+.foodinput11-15{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background:linear-gradient(180deg, rgba(255,206,103,0.22) -42.47%, rgba(253,237,202,0) 100%) ;
+}
+/* Food11 */
+#food11{
+    height: 400px;
+    width: 200px;
+}
+#f11image{
+    height: 200px;
+    width: 200px;
+}
+#Samosa{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Samosa:hover{
+   border: 3px solid black;
+}
+#f11p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f11p2{
+    text-align: center;
+}
+/* Food12 */
+#food12{
+    height: 400px;
+    width: 200px;
+}
+#f12image{
+    height: 200px;
+    width: 200px;
+}
+#Kachori{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Kachori:hover{
+   border: 3px solid black;
+}
+#f12p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f12p2{
+    text-align: center;
+}
+/* Food13 */
+#food13{
+    height: 400px;
+    width: 200px;
+}
+#f13image{
+    height: 200px;
+    width: 200px;
+}
+#Cholebhature{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Cholebhature:hover{
+   border: 3px solid black;
+}
+#f13p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f13p2{
+    text-align: center;
+}
+/* Food14 */
+#food14{
+    height: 400px;
+    width: 200px;
+}
+#f14image{
+    height: 200px;
+    width: 200px;
+}
+#Aloopatties{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Aloopatties:hover{
+   border: 3px solid black;
+}
+#f14p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f14p2{
+    text-align: center;
+}
+/* Food15 */
+#food15{
+    height: 400px;
+    width: 200px;
+}
+#f15image{
+    height: 200px;
+    width: 200px;
+}
+#Poha{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+#Poha:hover{
+   border: 3px solid black;
+}
+#f15p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#f15p2{
+    text-align: center;
+}
+
+
+/* How Work Section  */
+
+.howwork {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255,206,103,0.22) -42.47%, rgba(253,237,202,0) 100%);
+}
+
+.statementwork p {
+    font-size: 2.5rem;
+    color: #F17228;
+    font-weight: bold;
+}
+
+.divhowwork3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.divhowwork3 div {
+    flex: 1 1 calc(25% - 20px); /* four columns */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+.divhowwork3 img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.divhowwork3 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.divhowwork3 p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 992px) {
+    .divhowwork3 div {
+        flex: 1 1 calc(50% - 20px); /* two columns */
+    }
+
+    .divhowwork3 img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .divhowwork3 h3 {
+        font-size: 1.3rem;
+    }
+
+    .divhowwork3 p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .divhowwork3 div {
+        flex: 1 1 100%; /* one column */
+    }
+
+    .divhowwork3 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .divhowwork3 h3 {
+        font-size: 1.2rem;
+    }
+
+    .divhowwork3 p {
+        font-size: 0.8rem;
+    }
+
+    .statementwork p {
+        font-size: 2rem;
+    }
+}
+
+.about {
+    height: auto;
+    text-align: center;
+}
+.about p{
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: center;
+}
+.aboutTheory{
+font-size: 1rem;
+color: #424242;
+width: 50%;
+}
+#a1{
+    font-size: 1rem;
+    color: #424242;
+    text-align: center;
+}
+/* Footer Styling */
+footer {
+    background: linear-gradient(180deg, rgba(255,206,103,0.22) -42.47%, rgba(253,237,202,0) 100%);
+    color: black;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-about img{
+    height: 100px;
+    width: 150px;
+}
+
+.footer-about, .footer-links, .footer-contact, .footer-social {
+    flex-basis: 22%;
+    margin-bottom: 20px;
+}
+
+.footer-about h3, .footer-links h4, .footer-contact h4, .footer-social h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-about p, .footer-contact p {
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd44c;
+}
+
+.footer-social a  {
+    color: black;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ffd44c;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about, .footer-links, .footer-contact, .footer-social {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-bottom: 0;
+    }
+}

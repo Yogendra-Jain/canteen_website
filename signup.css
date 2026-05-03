@@ -1,0 +1,6 @@
+body{
+    background-image: url("images/backgroundFood.jpg");
+}
+.container{
+    background: linear-gradient(180deg, rgba(255,206,103,0.22) -42.47%, rgba(253,237,202,0) 100%);
+}
